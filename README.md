@@ -9,13 +9,13 @@
   </p>
 
   <p>
-    <a href="https://github.com/liljecz">
+    <a href="https://github.com/Racd25">
       <img src="https://img.shields.io/badge/GitHub-Racd25-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
     </a>
     <a href="mailto:raulcaldaz@gmail.com">
       <img src="https://img.shields.io/badge/Email-raulcaldaz@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
     </a>
-    <a href="https://t.me/liljeczdev">
+    <a href="https://t.me/RaulCalmon25">
       <img src="https://img.shields.io/badge/Telegram-Contacto-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
     </a>
   </p>
@@ -44,29 +44,29 @@ Este proyecto es la presentación digital de mi trabajo profesional, diseñado c
 </p>
 
 - **Cybersecurity & Cloud Defense:**
-- 
-Identity & Governance: Microsoft Entra ID, Privileged Identity Management (PIM), RBAC.
+  
+  Identity & Governance: Microsoft Entra ID, Privileged Identity Management (PIM), RBAC.
 
-Cloud Security: Azure Security (AZ-500), Defender for Cloud, Network Security Groups (NSGs).
+  Cloud Security: Azure Security (AZ-500), Defender for Cloud, Network Security Groups (NSGs).
 
-Hardening & Auditing: Linux System Hardening (Debian), Threat Analysis, Access Control.
+  Hardening & Auditing: Linux System Hardening (Debian), Threat Analysis, Access Control.
 
 
 - **⚙️ Systems & DevSecOps:**
 
-Operating Systems: Debian Linux, Windows Server.
+  Operating Systems: Debian Linux, Windows Server.
 
-Containerization & Orchestration: Docker, Kubernetes.
+  Containerization & Orchestration: Docker, Kubernetes.
 
-Automation & Scripting: Bash, Python, PowerShell.
+  Automation & Scripting: Bash, Python, PowerShell.
 
 - **💻 Development & Code Security**
 
-Core Languages: Python, Java, Go.
+  Core Languages: Python, Java, Go.
 
-Secure Coding Practices: Vulnerability Assessment, Input Sanitization, Key Management (Azure Key Vault).
+  Secure Coding Practices: Vulnerability Assessment, Input Sanitization, Key Management (Azure Key Vault).
 
-Databases: MongoDB, PostgreSQL, MySQL.
+  Databases: MongoDB
 
 <br/>
 
