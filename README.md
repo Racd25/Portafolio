@@ -10,7 +10,7 @@
 
   <p>
     <a href="https://github.com/liljecz">
-      <img src="https://img.shields.io/badge/GitHub-liljecz-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+      <img src="https://img.shields.io/badge/GitHub-Racd25-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
     </a>
     <a href="mailto:raulcaldaz@gmail.com">
       <img src="https://img.shields.io/badge/Email-raulcaldaz@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
@@ -35,7 +35,7 @@ Este proyecto es la presentación digital de mi trabajo profesional, diseñado c
 
 <br/>
 
-## 🛠️ Stack Tecnológico
+## 🛠️ Technologic Stack
 
 <p align="center">
   <a href="https://skillicons.dev">
