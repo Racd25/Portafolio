@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/liljecz/liljecz/main/assets/banner.png" alt="CruzDev Portfolio" width="100%" />
+  <img src="https://raw.githubusercontent.com/liljecz/liljecz/main/assets/banner.png" alt="Racd25 Portfolio" width="100%" />
 
   <h1>🚀 Raúl Calmón | Web Portfolio</h1>
   <p>
