@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/liljecz/liljecz/main/assets/banner.png" alt="CruzDev Portfolio" width="100%" />
 
-  <h1>🚀 CruzDev | Premium Web Portfolio</h1>
+  <h1>🚀 Raúl Calmón | Web portfolio</h1>
   <p>
     <strong>Portafolio interactivo personal de Raúl Calmón</strong>
   </p>
@@ -13,8 +13,8 @@
     <a href="https://github.com/liljecz">
       <img src="https://img.shields.io/badge/GitHub-liljecz-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
     </a>
-    <a href="mailto:josemancruz.h@gmail.com">
-      <img src="https://img.shields.io/badge/Email-josemancruz.h@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    <a href="mailto:raulcaldaz@gmail.com">
+      <img src="https://img.shields.io/badge/Email-raulcaldaz@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
     </a>
     <a href="https://t.me/liljeczdev">
       <img src="https://img.shields.io/badge/Telegram-Contacto-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
@@ -65,8 +65,7 @@ Este proyecto es la presentación digital de mi trabajo profesional, diseñado c
 
 Soy **Jose Manuel Cruz**, un apasionado del desarrollo de software y la infraestructura con más de 7 años de experiencia. Me especializo en crear soluciones eficientes, optimizar servidores y desarrollar interfaces elegantes que aportan valor real a los usuarios.
 
-- **WhatsApp:** [+58 416-8761102](https://wa.me/584168761102)
-- **Instagram:** [@j.cruz0406](https://www.instagram.com/j.cruz0406?igsh=b3phYWVlajh2Nmxn)
+- **WhatsApp:** [+58 414-5493549](https://wa.me/584145493549)
 
 ---
 
