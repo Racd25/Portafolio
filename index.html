@@ -5,26 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Portafolio profesional de Jose Manuel Cruz Hoyo - Ingeniero en Informática especializado en desarrollo de software, automatización, infraestructura e Inteligencia Artificial.">
+    content="Portafolio profesional de Raúl Calmón - Ingeniero en Sistemas & Ciberseguridad, especializado en seguridad cloud, Microsoft Sentinel, Active Directory, IAM/RBAC y hardening de sistemas. Certificado Microsoft Azure Security Engineer (AZ-500).">
   <meta name="keywords"
-    content="Jose Cruz, CruzDev, Ingeniero en Informática, Automatización, Python, Next.js, Flutter, n8n, Infraestructura, Redes, Inteligencia Artificial">
-  <meta name="author" content="Jose Manuel Cruz Hoyo">
+    content="Raúl Calmón, Azure Security Engineer, AZ-500, Ciberseguridad, Microsoft Sentinel, KQL, SOAR, Active Directory, SOC, Cloud Security, Hardening">
+  <meta name="author" content="Raúl Alberto Calmón Daza">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/favicon.png">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Jose Cruz | Ingeniero en Informática & Software Developer">
+  <meta property="og:title" content="Raúl Calmón | Ingeniero en Sistemas & Ciberseguridad (AZ-500)">
   <meta property="og:description"
-    content="Explora el portafolio y competencias técnicas de Jose Cruz. Desarrollador de software, experto en automatización e infraestructura tecnológica.">
+    content="Explora el portafolio y competencias de Raúl Calmón. Especialista en Ciberseguridad, Cloud Security y operaciones SOC con Microsoft Sentinel y KQL.">
   <meta property="og:image" content="assets/og-image.jpg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="Jose Cruz | Ingeniero en Informática & Software Developer">
+  <meta property="twitter:title" content="Raúl Calmón | Ingeniero en Sistemas & Ciberseguridad (AZ-500)">
   <meta property="twitter:description"
-    content="Explora el portafolio y competencias técnicas de Jose Cruz. Desarrollador de software, experto en automatización e infraestructura tecnológica.">
+    content="Explora el portafolio y competencias de Raúl Calmón. Especialista en Ciberseguridad, Cloud Security y operaciones SOC con Microsoft Sentinel y KQL.">
 
   <!-- Premium Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,8 +36,112 @@
   <!-- Devicon for Tech Stack Icons -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
-  <title>Jose Cruz | Ingeniero en Informática</title>
+  <title>Raúl Calmón | Ingeniero en Sistemas & Ciberseguridad (AZ-500)</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Estilos adicionales: Technologic Stack + Tarjeta AZ-500 -->
+  <style>
+    .stack-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .stack-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 14px;
+      background: hsl(var(--text-primary) / 0.06);
+      border: 1px solid hsl(var(--border-color));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+
+    .stack-icon i {
+      font-size: 2rem;
+    }
+
+    .stack-icon:hover {
+      transform: translateY(-3px);
+      border-color: hsl(var(--accent));
+    }
+
+    .az500-card {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+      padding: 2rem;
+      border-radius: 16px;
+      border: 1px solid hsl(var(--accent) / 0.5);
+      background: linear-gradient(135deg, hsl(var(--accent) / 0.12), hsl(var(--accent) / 0.03));
+      box-shadow: 0 0 30px hsl(var(--accent) / 0.15);
+    }
+
+    .az500-badge {
+      flex-shrink: 0;
+      width: 72px;
+      height: 72px;
+      border-radius: 16px;
+      background: hsl(var(--text-primary) / 0.06);
+      border: 1px solid hsl(var(--border-color));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .az500-badge i {
+      font-size: 2.5rem;
+    }
+
+    .az500-kicker {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: hsl(var(--accent));
+      margin-bottom: 0.4rem;
+    }
+
+    .az500-card h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: hsl(var(--text-primary));
+      margin-bottom: 0.6rem;
+    }
+
+    .az500-card p {
+      color: hsl(var(--text-secondary));
+      font-size: 0.95rem;
+    }
+
+    .cert-list {
+      list-style: none;
+      margin: 0 0 1.5rem 0;
+      padding: 0;
+    }
+
+    .cert-list li {
+      padding: 0.6rem 0;
+      border-bottom: 1px solid hsl(var(--border-color));
+      color: hsl(var(--text-secondary));
+      font-size: 0.92rem;
+    }
+
+    .cert-list li strong {
+      color: hsl(var(--text-primary));
+    }
+
+    .sub-heading {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: hsl(var(--text-primary));
+      margin-top: 2.5rem;
+      margin-bottom: 1.25rem;
+    }
+  </style>
 </head>
 
 <body>
@@ -61,21 +165,21 @@
     <header class="left-col">
       <div class="profile-info">
         <div class="profile-avatar">
-          <img src="assets/profile.jpeg" alt="Foto de perfil de Jose Manuel Cruz Hoyo" id="profile-img" style="cursor: pointer;" title="Haz clic para ampliar">
+          <img src="assets/profile.jpeg" alt="Foto de perfil de Raúl Alberto Calmón Daza" id="profile-img" style="cursor: pointer;" title="Haz clic para ampliar">
         </div>
         <h1 class="profile-name">Raúl Calmón</h1>
-        <h2 class="profile-title">Ingeniero en Informática</h2>
+        <h2 class="profile-title">Ingeniero en Sistemas & Ciberseguridad</h2>
         <h3 class="profile-title" style="font-size: 0.9rem; font-weight: 500; opacity: 0.85;">
           <span class="typing-text"
-            data-words='["Especialista en Automatización.", "Desarrollador de Software.", "Desarrollador Web.", "Desarrollador de Inteligencia Artificial."]'>Especialista
-            en Automatización.</span>
+            data-words='["Especialista en Ciberseguridad.", "Azure Security Engineer (AZ-500).", "Administrador de Sistemas.", "Analista SOC / Threat Detection."]'>Especialista
+            en Ciberseguridad.</span>
         </h3>
         <p class="profile-desc">
-          Creo soluciones de software automatizadas, seguras y de alto rendimiento integrando inteligencia artificial,
-          automatización y arquitecturas de red resilientes.
+          Protejo infraestructuras críticas y construyo entornos cloud seguros, combinando administración de sistemas,
+          control de acceso (IAM/RBAC), hardening y detección de amenazas con Microsoft Sentinel y KQL.
         </p>
 
-        <!-- Brittany Chiang Side Navigation -->
+        <!-- Side Navigation -->
         <nav class="side-nav" aria-label="Navegación lateral de secciones">
           <ul>
             <li>
@@ -88,6 +192,12 @@
               <a href="#experience" class="nav-item">
                 <span class="nav-line"></span>
                 <span>Experiencia</span>
+              </a>
+            </li>
+            <li>
+              <a href="#certification" class="nav-item">
+                <span class="nav-line"></span>
+                <span>Certificación AZ-500</span>
               </a>
             </li>
             <li>
@@ -137,17 +247,8 @@
         </div>
 
         <div class="social-links">
-          <a href="https://github.com/liljecz" target="_blank" rel="noopener noreferrer" class="social-link"
-            aria-label="GitHub de Jose Manuel Cruz">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path
-                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
-              </path>
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/in/jose-cruz-b4b090413/" target="_blank" rel="noopener noreferrer" class="social-link"
-            aria-label="LinkedIn de Jose Manuel Cruz">
+          <a href="https://www.linkedin.com/in/raul-calmón/" target="_blank" rel="noopener noreferrer" class="social-link"
+            aria-label="LinkedIn de Raúl Calmón">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -155,25 +256,15 @@
               <circle cx="4" cy="4" r="2"></circle>
             </svg>
           </a>
-          <a href="https://t.me/liljeczdev" target="_blank" rel="noopener noreferrer" class="social-link"
-            aria-label="Telegram de Jose Manuel Cruz">
+          <a href="mailto:raulcaldaz@gmail.com" class="social-link" aria-label="Correo de Raúl Calmón">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="m22 2-7 20-4-9-9-4Z"></path>
-              <path d="M22 2 11 13"></path>
+              <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
             </svg>
           </a>
-          <a href="https://www.instagram.com/j.cruz0406?igsh=b3phYWVlajh2Nmxn" target="_blank" rel="noopener noreferrer"
-            class="social-link" aria-label="Instagram de Jose Manuel Cruz">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg>
-          </a>
-          <a href="https://wa.me/584168761102" target="_blank" rel="noopener noreferrer" class="social-link"
-            aria-label="WhatsApp/Teléfono de Jose Manuel Cruz">
+          <a href="https://wa.me/584145493549" target="_blank" rel="noopener noreferrer" class="social-link"
+            aria-label="WhatsApp/Teléfono de Raúl Calmón">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path
@@ -182,7 +273,7 @@
             </svg>
           </a>
         </div>
-        
+
         <!-- Action Buttons -->
         <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.5rem;">
           <!-- Descargar CV -->
@@ -191,7 +282,7 @@
             Descargar CV (PDF)
           </a>
 
-          <!-- Documentos y Certificados -->
+          <!-- Documentos y Certificados (TODO: reemplazar por tu carpeta de Drive con tus certificados) -->
           <a href="https://drive.google.com/drive/u/1/folders/1qS3HHx1dkR8hLw6YaEpA-NinnD017qhC" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.75rem 1rem; font-size: 0.85rem; font-weight: 600; color: hsl(var(--text-primary)); background-color: hsl(var(--text-primary) / 0.02); border: 1px solid hsl(var(--border-color)); border-radius: 8px; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.borderColor='hsl(var(--accent))'; this.style.color='hsl(var(--accent))'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='hsl(var(--border-color))'; this.style.color='hsl(var(--text-primary))'; this.style.transform='none';">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
             Ver Certificados en Drive
@@ -209,16 +300,19 @@
           <h2 class="section-title-mobile">Sobre Mí</h2>
         </div>
         <p>
-          Soy <span>Ingeniero en Informática</span> (UNELLEZ, 2025) con una sólida trayectoria de 7 años en la administración y optimización de
-          infraestructuras tecnológicas, redes y telecomunicaciones. Poseo amplia experiencia configurando equipos <span>Mikrotik</span>, implementando
-          Firewalls y gestionando <span>servidores DietPi y Windows Server</span> para asegurar alta disponibilidad.
+          Soy <span>Ingeniero en Sistemas y Ciberseguridad</span> con casi 4 años de experiencia administrando y asegurando
+          infraestructura TI crítica. Me especializo en <span>Ciberseguridad y Cloud Security</span>: administración de
+          <span>Active Directory</span>, control de acceso (<span>RBAC/IAM</span>), hardening de sistemas y aplicación de
+          protocolos estrictos de seguridad en operaciones judiciales de alta disponibilidad.
         </p>
         <p>
-          A su vez, cuento con 3 años de experiencia integrando mi perfil de infraestructura con el <span>desarrollo de software y la automatización</span>.
-          Mi enfoque se centra en crear soluciones eficientes utilizando <span>Python, Next.js, Flutter</span> e inteligencia artificial para optimizar procesos críticos.
+          Recientemente certificado como <span>Azure Security Engineer Associate (AZ-500)</span>, combino una sólida base
+          on-premise con habilidades modernas de seguridad en la nube: <span>Microsoft Sentinel, KQL y SOAR</span>,
+          validadas en despliegues de laboratorio a escala empresarial para detección de amenazas y respuesta automatizada.
         </p>
         <p>
-          Garantizo la estabilidad, seguridad y el escalamiento de los sistemas que administro, combinando mis conocimientos en arquitectura de redes con el desarrollo de plataformas y flujos automatizados.
+          Profesional trilingüe (Español/Inglés/Francés), orientado a entornos remotos de <span>Cloud Security y SOC</span>,
+          garantizando estabilidad, confidencialidad y mejora continua de los sistemas que administro.
         </p>
       </section>
 
@@ -231,334 +325,113 @@
         <div class="experience-list">
           <!-- Item 1 -->
           <div class="experience-card" id="exp-item-1">
-            <div class="experience-card-date">2025 — Actualidad</div>
+            <div class="experience-card-date">2022 — Actualidad</div>
             <div class="experience-content">
-              <h3 class="experience-card-title">Jefe del Departamento de Tecnología Educativa</h3>
-              <div class="experience-card-company">Politécnico Santiago Mariño Ext. Barinas</div>
+              <h3 class="experience-card-title">Administrador de Sistemas TI / Técnico</h3>
+              <div class="experience-card-company">Dirección Ejecutiva de la Magistratura – Regional Barinas</div>
               <p class="experience-card-desc">
-                Dirección del mantenimiento preventivo y correctivo de la infraestructura institucional. Lidero la
-                administración, mantenimiento y levantamiento de servidores corporativos bajo Windows Server y de
-                almacenamiento/servicios (NAS/SAAS) configurados en entornos Linux mediante distribuciones open-source y
-                optimizadas como DietPi.
+                Mantengo la disponibilidad de los sistemas judiciales críticos mediante monitoreo proactivo, gestión de
+                parches y mantenimiento preventivo en infraestructura distribuida.
               </p>
               <p class="experience-card-desc" style="margin-top: 0.5rem;">
-                Desarrollo plataformas web y móviles internas, complementadas con flujos optimizados que incrementan la
-                productividad académica y administrativa del departamento.
+                Fortalezco la postura de seguridad de bases de datos sensibles implementando control de acceso basado en
+                roles (RBAC), reduciendo a cero los incidentes de acceso no autorizado.
+              </p>
+              <p class="experience-card-desc" style="margin-top: 0.5rem;">
+                Asesoro a la dirección en mejoras de infraestructura y estrategias de mitigación de riesgos, logrando una
+                reducción medible de la deuda técnica en 12 meses.
+              </p>
+              <p class="experience-card-desc" style="margin-top: 0.5rem;">
+                Despliego y configuro Microsoft Sentinel en entornos de laboratorio Azure, desarrollando reglas analíticas
+                KQL para detección de amenazas en tiempo real y flujos de respuesta automatizada.
               </p>
             </div>
           </div>
-
-          <!-- Item 2 -->
-          <div class="experience-card" id="exp-item-2">
-            <div class="experience-card-date">2020 — Actualidad</div>
-            <div class="experience-content">
-              <h3 class="experience-card-title">Operador de Centro de Transmisión de Contingencia</h3>
-              <div class="experience-card-company">Consejo Nacional Electoral (CNE)</div>
-              <p class="experience-card-desc">
-                Supervisión técnica de transmisiones críticas de datos bajo altos estándares de redundancia y seguridad
-                informática en entornos distribuidos bajo presión.
-              </p>
-            </div>
-          </div>
-
-
         </div>
       </section>
 
-      <!-- Competencias Section -->
+      <!-- Certificación AZ-500 Section -->
+      <section class="skills-section" id="certification" aria-label="Certificación destacada AZ-500">
+        <div class="section-header-mobile">
+          <h2 class="section-title-mobile">Certificación AZ-500</h2>
+        </div>
+
+        <div class="az500-card">
+          <div class="az500-badge">
+            <i class="devicon-azure-plain"></i>
+          </div>
+          <div>
+            <div class="az500-kicker">Microsoft Certified · 2026</div>
+            <h3>Azure Security Engineer Associate (AZ-500)</h3>
+            <p>
+              Certificación oficial de Microsoft que valida mis competencias para implementar seguridad en la nube a nivel
+              empresarial: gestión de identidades y acceso (IAM/MFA), protección de datos y aplicaciones, seguridad de red
+              y operaciones de seguridad con <strong>Microsoft Sentinel, KQL y SOAR (Logic Apps)</strong>. Este respaldo
+              certifica mi capacidad para diseñar, configurar y monitorear entornos cloud seguros de extremo a extremo.
+            </p>
+          </div>
+        </div>
+
+        <h3 class="sub-heading">Otras certificaciones</h3>
+        <ul class="cert-list">
+          <li><strong>Cybersecurity & Pentesting Course</strong> — Edutin Academy (2025)</li>
+          <li><strong>Fundamentals of Computer Forensics</strong> — SUSCERTE (2024)</li>
+          <li><strong>Introduction to Cryptography</strong> — SUSCERTE (2024)</li>
+        </ul>
+
+        <h3 class="sub-heading">Educación</h3>
+        <ul class="cert-list">
+          <li><strong>B.Sc. en Ingeniería de Sistemas</strong> — Universidad Santa María (2019 – 2025)</li>
+          <li><strong>B.Sc. en Ingeniería Informática</strong> — UNELLEZ (2020 – 2025)</li>
+        </ul>
+
+        <h3 class="sub-heading">Idiomas</h3>
+        <div class="skills-grid" style="grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));">
+          <div class="skill-chip">
+            <div class="skill-chip-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+            </div>
+            <span class="skill-chip-name">Español (Nativo)</span>
+          </div>
+          <div class="skill-chip">
+            <div class="skill-chip-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+            </div>
+            <span class="skill-chip-name">Inglés (C2 Certificado)</span>
+          </div>
+          <div class="skill-chip">
+            <div class="skill-chip-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+            </div>
+            <span class="skill-chip-name">Francés (Intermedio)</span>
+          </div>
+          <div class="skill-chip">
+            <div class="skill-chip-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+            </div>
+            <span class="skill-chip-name">Alemán (Básico)</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Competencias / Technologic Stack Section -->
       <section class="skills-section" id="tech" aria-label="Competencias core">
         <div class="section-header-mobile">
-          <h2 class="section-title-mobile">Competencias</h2>
+          <h2 class="section-title-mobile">🛠 Technologic Stack</h2>
         </div>
 
-        <div class="skills-grid">
-          <!-- Next.js -->
-          <div class="skill-chip" id="skill-next">
-            <div class="skill-chip-icon">
-              <i class="devicon-nextjs-plain"></i>
-            </div>
-            <span class="skill-chip-name">Next.js</span>
-          </div>
-
-          <!-- JavaScript -->
-          <div class="skill-chip" id="skill-js">
-            <div class="skill-chip-icon">
-              <i class="devicon-javascript-plain"></i>
-            </div>
-            <span class="skill-chip-name">JavaScript</span>
-          </div>
-
-          <!-- TypeScript -->
-          <div class="skill-chip" id="skill-ts">
-            <div class="skill-chip-icon">
-              <i class="devicon-typescript-plain"></i>
-            </div>
-            <span class="skill-chip-name">TypeScript</span>
-          </div>
-
-          <!-- Node.js -->
-          <div class="skill-chip" id="skill-nodejs">
-            <div class="skill-chip-icon">
-              <i class="devicon-nodejs-plain"></i>
-            </div>
-            <span class="skill-chip-name">Node.js</span>
-          </div>
-
-          <!-- Python -->
-          <div class="skill-chip" id="skill-python">
-            <div class="skill-chip-icon">
-              <i class="devicon-python-plain"></i>
-            </div>
-            <span class="skill-chip-name">Python</span>
-          </div>
-
-          <!-- C# -->
-          <div class="skill-chip" id="skill-csharp">
-            <div class="skill-chip-icon">
-              <i class="devicon-csharp-plain"></i>
-            </div>
-            <span class="skill-chip-name">C#</span>
-          </div>
-
-          <!-- Flutter -->
-          <div class="skill-chip" id="skill-flutter">
-            <div class="skill-chip-icon">
-              <i class="devicon-flutter-plain"></i>
-            </div>
-            <span class="skill-chip-name">Flutter</span>
-          </div>
-
-          <!-- Dart -->
-          <div class="skill-chip" id="skill-dart">
-            <div class="skill-chip-icon">
-              <i class="devicon-dart-plain"></i>
-            </div>
-            <span class="skill-chip-name">Dart</span>
-          </div>
-
-          <!-- Supabase -->
-          <div class="skill-chip" id="skill-supabase">
-            <div class="skill-chip-icon">
-              <i class="devicon-supabase-plain"></i>
-            </div>
-            <span class="skill-chip-name">Supabase</span>
-          </div>
-
-          <!-- Turso -->
-          <div class="skill-chip" id="skill-turso">
-            <div class="skill-chip-icon">
-              <i class="devicon-sqlite-plain"></i>
-            </div>
-            <span class="skill-chip-name">Turso</span>
-          </div>
-
-          <!-- MySQL -->
-          <div class="skill-chip" id="skill-mysql">
-            <div class="skill-chip-icon">
-              <i class="devicon-mysql-plain"></i>
-            </div>
-            <span class="skill-chip-name">MySQL</span>
-          </div>
-
-          <!-- SQL -->
-          <div class="skill-chip" id="skill-sql">
-            <div class="skill-chip-icon">
-              <i class="devicon-azuresqldatabase-plain"></i>
-            </div>
-            <span class="skill-chip-name">SQL</span>
-          </div>
-
-          <!-- HTML -->
-          <div class="skill-chip" id="skill-html">
-            <div class="skill-chip-icon">
-              <i class="devicon-html5-plain"></i>
-            </div>
-            <span class="skill-chip-name">HTML5</span>
-          </div>
-
-          <!-- Arduino -->
-          <div class="skill-chip" id="skill-arduino">
-            <div class="skill-chip-icon">
-              <i class="devicon-arduino-plain"></i>
-            </div>
-            <span class="skill-chip-name">Arduino</span>
-          </div>
-
-          <!-- Automatización con Python -->
-          <div class="skill-chip" id="skill-autopy">
-            <div class="skill-chip-icon">
-              <i class="devicon-python-plain"></i>
-            </div>
-            <span class="skill-chip-name">Aut. Python</span>
-          </div>
-
-          <!-- Automatización con VBA Excel -->
-          <div class="skill-chip" id="skill-autovba">
-            <div class="skill-chip-icon">
-              <i class="devicon-visualbasic-plain"></i>
-            </div>
-            <span class="skill-chip-name">Aut. VBA Excel</span>
-          </div>
-
-          <!-- n8n -->
-          <div class="skill-chip" id="skill-n8n">
-            <div class="skill-chip-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-              </svg>
-            </div>
-            <span class="skill-chip-name">n8n</span>
-          </div>
-
-          <!-- Redes y Firewalls -->
-          <div class="skill-chip" id="skill-networks">
-            <div class="skill-chip-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-            </div>
-            <span class="skill-chip-name">Redes / Firewalls</span>
-          </div>
-
-          <!-- Servidores (Windows/DietPi) -->
-          <div class="skill-chip" id="skill-servers">
-            <div class="skill-chip-icon">
-              <i class="devicon-linux-plain"></i>
-            </div>
-            <span class="skill-chip-name">Servidores Linux/Win</span>
-          </div>
-        </div>
-
-        <h3
-          style="font-size: 1.125rem; font-weight: 600; color: hsl(var(--text-primary)); margin-top: 2.5rem; margin-bottom: 1.25rem;">
-          Habilidades de autogestion</h3>
-
-        <div class="skills-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
-          <!-- Trabajo bajo presión -->
-          <div class="skill-chip">
-            <div class="skill-chip-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
-                <path d="M12 6v6l4 2"></path>
-              </svg>
-            </div>
-            <span class="skill-chip-name">Trabajo bajo presión</span>
-          </div>
-
-          <!-- Responsabilidad -->
-          <div class="skill-chip">
-            <div class="skill-chip-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg>
-            </div>
-            <span class="skill-chip-name">Responsabilidad</span>
-          </div>
-
-          <!-- Puntualidad -->
-          <div class="skill-chip">
-            <div class="skill-chip-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 16 14"></polyline>
-              </svg>
-            </div>
-            <span class="skill-chip-name">Puntualidad</span>
-          </div>
-
-          <!-- Trabajo en equipo -->
-          <div class="skill-chip">
-            <div class="skill-chip-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-              </svg>
-            </div>
-            <span class="skill-chip-name">Trabajo en equipo</span>
-          </div>
-
-          <!-- Resolución de problemas -->
-          <div class="skill-chip">
-            <div class="skill-chip-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.9 1.2 1.5 1.5 2.5" />
-                <path d="M9 18h6" />
-                <path d="M10 22h4" />
-              </svg>
-            </div>
-            <span class="skill-chip-name">Resolución de problemas</span>
-          </div>
-
-          <!-- Honestidad / Integridad -->
-          <div class="skill-chip">
-            <div class="skill-chip-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                <polyline points="9 12 11 14 15 10"></polyline>
-              </svg>
-            </div>
-            <span class="skill-chip-name">Honestidad</span>
-          </div>
-
-          <!-- Adaptabilidad -->
-          <div class="skill-chip">
-            <div class="skill-chip-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 2v6h-6"></path>
-                <path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path>
-                <path d="M3 22v-6h6"></path>
-                <path d="M21 12a9 9 0 0 1-15 6.7L3 16"></path>
-              </svg>
-            </div>
-            <span class="skill-chip-name">Adaptabilidad</span>
-          </div>
-
-          <!-- Aprendizaje continuo -->
-          <div class="skill-chip">
-            <div class="skill-chip-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-              </svg>
-            </div>
-            <span class="skill-chip-name">Aprendizaje continuo</span>
-          </div>
-
-          <!-- Proactividad -->
-          <div class="skill-chip">
-            <div class="skill-chip-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-              </svg>
-            </div>
-            <span class="skill-chip-name">Proactividad</span>
-          </div>
-
-          <!-- Comunicación asertiva -->
-          <div class="skill-chip">
-            <div class="skill-chip-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-              </svg>
-            </div>
-            <span class="skill-chip-name">Comunicación asertiva</span>
-          </div>
+        <!-- Únicamente los iconos del stack tecnológico -->
+        <div class="stack-grid">
+          <div class="stack-icon" title="Microsoft Azure" aria-label="Microsoft Azure"><i class="devicon-azure-plain"></i></div>
+          <div class="stack-icon" title="MongoDB" aria-label="MongoDB"><i class="devicon-mongodb-plain"></i></div>
+          <div class="stack-icon" title="Go" aria-label="Go"><i class="devicon-go-plain"></i></div>
+          <div class="stack-icon" title="Python" aria-label="Python"><i class="devicon-python-plain"></i></div>
+          <div class="stack-icon" title="Debian" aria-label="Debian"><i class="devicon-debian-plain"></i></div>
+          <div class="stack-icon" title="Java" aria-label="Java"><i class="devicon-java-plain"></i></div>
+          <div class="stack-icon" title="Python (Automatización)" aria-label="Python Automatización"><i class="devicon-python-plain"></i></div>
+          <div class="stack-icon" title="Docker" aria-label="Docker"><i class="devicon-docker-plain"></i></div>
+          <div class="stack-icon" title="Kubernetes" aria-label="Kubernetes"><i class="devicon-kubernetes-plain"></i></div>
+          <div class="stack-icon" title="Google Workspace" aria-label="Google Workspace"><i class="devicon-google-plain"></i></div>
         </div>
       </section>
 
@@ -569,123 +442,32 @@
         </div>
 
         <div class="projects-list">
-          <!-- Project 1 (Tienda de Café) -->
+          <!-- Project 1 (Sentinel Lab) -->
           <article class="project-card" id="project-card-1">
-            <div class="project-card-image">
-              <img src="assets/cafe_preview.png" alt="Captura de pantalla de la Tienda de Café Premium de Jose Cruz">
-            </div>
-            <div class="project-details">
-              <div class="project-card-header">
-                <h3 class="project-card-title">Tienda de Café Premium</h3>
-                <div class="project-actions">
-                  <a href="https://tienda-cafe-six.vercel.app/" class="project-action-link" target="_blank"
-                    rel="noopener noreferrer" aria-label="Abrir Demo en Vivo de Tienda de Café">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                      stroke-width="2">
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <p class="project-desc">
-                Una tienda en línea interactiva y elegante diseñada para ofrecer una experiencia fluida de exploración y
-                compra de café de especialidad. Cualquier visitante puede interactuar directamente con los productos,
-                navegar las categorías y realizar simulaciones y pruebas de flujo de compra en tiempo real.
-              </p>
-              <div style="margin-bottom: 1.25rem;">
-                <a href="https://tienda-cafe-six.vercel.app/" target="_blank" rel="noopener noreferrer"
-                  style="font-size: 0.85rem; font-weight: 700; color: hsl(var(--accent)); display: inline-flex; align-items: center; gap: 0.4rem;">
-                  Probar tienda en vivo
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
-                    style="width: 14px; height: 14px;">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </a>
-              </div>
-              <div class="project-card-tags">
-                <span class="project-card-tag">Next.js</span>
-                <span class="project-card-tag">TypeScript</span>
-                <span class="project-card-tag">Tailwind CSS</span>
-                <span class="project-card-tag">Vercel</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" id="project-card-2">
-            <div class="project-card-image">
-              <img src="assets/youtube_donwloader.png"
-                alt="Captura de pantalla del Cliente de Música Offline (Spotify & YouTube Downloader) de Jose Cruz">
-            </div>
-            <div class="project-details">
-              <div class="project-card-header">
-                <h3 class="project-card-title">Cliente de Música Offline</h3>
-                <div class="project-actions">
-                  <a href="https://github.com/liljecz/youtube-spotify-playlist-downloader" class="project-action-link"
-                    target="_blank" rel="noopener noreferrer"
-                    aria-label="Abrir Repositorio en github de Cliente de Música Offline">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                      stroke-width="2">
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <p class="project-desc">
-                Un cliente local para descargar playlists de YouTube Music y Spotify, con soporte para múltiples
-                formatos de audio, gestión de metadatos y una interfaz intuitiva que facilita la organización y
-                reproducción de tu música favorita sin conexión.
-              </p>
-              <div style="margin-bottom: 1.25rem;">
-                <a href="https://github.com/liljecz/youtube-spotify-playlist-donwloader" target="_blank"
-                  rel="noopener noreferrer"
-                  style="font-size: 0.85rem; font-weight: 700; color: hsl(var(--accent)); display: inline-flex; align-items: center; gap: 0.4rem;">
-                  Revisa el repositorio del proyecto
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
-                    style="width: 14px; height: 14px;">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </a>
-              </div>
-              <div class="project-card-tags">
-                <span class="project-card-tag">Python</span>
-                <span class="project-card-tag">CustomTkinter</span>
-                <span class="project-card-tag">FFmpeg</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 3 (Cerradura) -->
-          <article class="project-card" id="project-card-3">
             <div class="project-card-image" style="background-color: hsl(var(--text-primary) / 0.05); display: flex; align-items: center; justify-content: center; height: 100%; min-height: 200px;">
               <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="hsl(var(--text-secondary))" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                <path d="m9 12 2 2 4-4"></path>
               </svg>
             </div>
             <div class="project-details">
               <div class="project-card-header">
-                <h3 class="project-card-title">Cerradura Electrónica Biométrica</h3>
+                <h3 class="project-card-title">Cloud Security & SIEM Implementation Lab</h3>
               </div>
               <p class="project-desc">
-                Prototipo funcional de cerradura electrónica diseñado y ensamblado utilizando hardware Arduino Uno R3 y conectividad Bluetooth. Incluye una aplicación móvil nativa en Android para la gestión de autenticación biométrica y control de acceso remoto.
+                Proyecto personal (2026). Arquitecté un despliegue de Microsoft Sentinel de extremo a extremo en Azure para
+                monitorear infraestructura cloud, simulando detección de amenazas a escala empresarial. Desarrollé consultas
+                KQL personalizadas para identificar patrones de autenticación anómalos y posible movimiento lateral,
+                mejorando la cobertura de detección en un 40%, con flujos de respuesta automatizada mediante Logic Apps (SOAR).
               </p>
               <div class="project-card-tags">
-                <span class="project-card-tag">Arduino</span>
-                <span class="project-card-tag">Android</span>
-                <span class="project-card-tag">Bluetooth</span>
-                <span class="project-card-tag">C++</span>
+                <span class="project-card-tag">Microsoft Sentinel</span>
+                <span class="project-card-tag">KQL</span>
+                <span class="project-card-tag">Azure</span>
+                <span class="project-card-tag">SOAR / Logic Apps</span>
               </div>
             </div>
           </article>
-
         </div>
       </section>
 
@@ -697,9 +479,9 @@
 
         <div style="text-align: center; margin-bottom: 2.5rem;">
           <p style="color: hsl(var(--text-secondary)); margin-bottom: 1rem; font-size: 1.05rem;">
-            ¿Tienes un proyecto en mente? Puedes usar el formulario o enviarme un correo electrónico a:
+            ¿Tienes un proyecto o posición de seguridad en mente? Puedes usar el formulario o enviarme un correo a:
           </p>
-          <a href="mailto:josemancruz.h@gmail.com"
+          <a href="mailto:raulcaldaz@gmail.com"
             style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 1.2rem; font-weight: 600; color: hsl(var(--text-primary)); text-decoration: none; padding: 0.75rem 1.5rem; background-color: hsl(var(--text-primary) / 0.05); border: 1px solid hsl(var(--border-color)); border-radius: 999px; transition: all 0.3s ease;"
             onmouseover="this.style.borderColor='hsl(var(--accent))'; this.style.color='hsl(var(--accent))'; this.style.transform='translateY(-2px)';"
             onmouseout="this.style.borderColor='hsl(var(--border-color))'; this.style.color='hsl(var(--text-primary))'; this.style.transform='none';">
@@ -708,7 +490,7 @@
               <rect width="20" height="16" x="2" y="4" rx="2"></rect>
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
             </svg>
-            josemancruz.h@gmail.com
+            raulcaldaz@gmail.com
           </a>
         </div>
 
@@ -724,7 +506,7 @@
             </div>
             <div class="form-group">
               <label for="form-message" class="form-label">Mensaje</label>
-              <textarea id="form-message" class="form-input" placeholder="Hola Jose, me gustaría conversar sobre..."
+              <textarea id="form-message" class="form-input" placeholder="Hola Raúl, me gustaría conversar sobre..."
                 required></textarea>
             </div>
             <button type="submit" class="form-btn">Enviar Mensaje</button>
