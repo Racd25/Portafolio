@@ -3,10 +3,10 @@
 
   <h1>🚀 CruzDev | Premium Web Portfolio</h1>
   <p>
-    <strong>Portafolio interactivo personal de Jose Manuel Cruz</strong>
+    <strong>Portafolio interactivo personal de Raúl Calmón</strong>
   </p>
   <p>
-    Ingeniero en Informática, Desarrollador de Software y Especialista en Automatización.
+    Ingeniero en Sistemas e Informática, Desarrollador de Software y Especialista en Ciberseguridad.
   </p>
 
   <p>
