@@ -68,18 +68,7 @@ Este proyecto es la presentación digital de mi trabajo profesional, diseñado c
 
   Databases: MongoDB
 
-<br/>
 
-## 🎯 Secciones del Portafolio
-
-1. **Hero Section:** Presentación inicial con efecto de escritura rotativo.
-2. **Sobre Mí:** Resumen de mi perfil profesional, experiencia y enfoque de trabajo.
-3. **Estadísticas:** Contadores dinámicos de proyectos completados, años de experiencia y líneas de código.
-4. **Competencias (Skills):** Cuadrícula interactiva con iconos vectoriales oficiales de mi stack de tecnologías (Next.js, Python, Flutter, etc.).
-5. **Proyectos:** Galería detallada de proyectos destacados (ej. *Tienda de Café Premium*), mostrando el rol desempeñado y las tecnologías usadas.
-6. **Contacto:** Formulario funcional integrado con correo electrónico.
-
-<br/>
 
 ## 👨‍💻 About Me
 
