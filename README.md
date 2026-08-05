@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/liljecz/liljecz/main/assets/banner.png" alt="CruzDev Portfolio" width="100%" />
 
-  <h1>🚀 Raúl Calmón | Web portfolio</h1>
+  <h1>🚀 Raúl Calmón | Web Portfolio</h1>
   <p>
     <strong>Portafolio interactivo personal de Raúl Calmón</strong>
   </p>
@@ -61,14 +61,14 @@ Este proyecto es la presentación digital de mi trabajo profesional, diseñado c
 
 <br/>
 
-## 👨‍💻 Sobre el Autor
+## 👨‍💻 About Me
 
-Soy **Jose Manuel Cruz**, un apasionado del desarrollo de software y la infraestructura con más de 7 años de experiencia. Me especializo en crear soluciones eficientes, optimizar servidores y desarrollar interfaces elegantes que aportan valor real a los usuarios.
+I am **Raúl Calmón**, a Software Engineer and Cybersecurity Specialist with over 4 years of experience dedicated to hardening systems and auditing software architectures. I specialize in cloud defense and threat mitigation. My work focuses on enforcing Zero Trust identity models via Microsoft Entra ID, managing Key Vault cryptography, securing cloud network infrastructure, and actively monitoring threats through Defender for Cloud and Microsoft Sentinel to ensure robust, compliant, and resilient system environments.
 
 - **WhatsApp:** [+58 414-5493549](https://wa.me/584145493549)
 
 ---
 
 <div align="center">
-  <sub>Construido con dedicación y código por <a href="https://github.com/liljecz">CruzDev</a></sub>
+  <sub>Build and coded by <a href="https://github.com/Racd25">Raul-Calmon</a></sub>
 </div>
