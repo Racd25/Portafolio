@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Racd25 Portfolio" width="100%" />
+  <alt="Racd25 Portfolio" width="100%" />
 
   <h1>🚀 Raúl Calmón | Web Portfolio</h1>
   <p>
