@@ -2,7 +2,7 @@
 
   <h1>🚀 Raúl Calmón | Web Portfolio</h1>
   <p>
-    <strong>Portafolio interactivo personal de Raúl Calmón</strong>
+    <strong>Personal Interactive Portfolio of Raúl Calmón</strong>
   </p>
   <p>
     Ingeniero en Sistemas e Informática, Desarrollador de Software y Especialista en Ciberseguridad.
@@ -23,17 +23,7 @@
 
 <hr />
 
-## ✨ Características Destacadas
 
-Este proyecto es la presentación digital de mi trabajo profesional, diseñado con los más altos estándares visuales y de rendimiento:
-
-- **Diseño Ultra-Premium:** Estética *Glassmorphism* y modo oscuro nativo, brindando una experiencia moderna y fluida.
-- **Interactividad y Animaciones:** Efectos de escritura dinámica (typing), contadores estadísticos y micro-interacciones suaves al hacer hover sobre los elementos.
-- **Desempeño Extremo (Vanilla Stack):** Construido 100% con HTML, CSS y JavaScript puros, sin dependencias pesadas, logrando tiempos de carga instantáneos.
-- **Formulario Funcional Integrado:** Sección de contacto conectada a *Formspree* para envíos de correo en tiempo real sin requerir backend.
-- **100% Responsive:** Adaptabilidad perfecta a cualquier dispositivo (móviles, tablets, escritorios).
-
-<br/>
 
 ## 🛠️ Technologic Stack
 
