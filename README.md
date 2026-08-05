@@ -40,7 +40,7 @@ Este proyecto es la presentación digital de mi trabajo profesional, diseñado c
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,nextjs,ts,python,cs,flutter,dart,mysql,supabase" alt="Tech Stack" />
+    <img src="https://skillicons.dev/icons?i=azure,mongodb,go,py,debian,java,py,docker,kubernetes,opencv" alt="Tech Stack" />
   </a>
 </p>
 
