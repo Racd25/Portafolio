@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Portafolio profesional de Raúl Calmón - Ingeniero en Sistemas & Ciberseguridad, especializado en seguridad cloud, Microsoft Sentinel, Active Directory, IAM/RBAC y hardening de sistemas. Certificado Microsoft Azure Security Engineer (AZ-500).">
+    content="Professional portfolio of Raúl Calmón — Systems & Cybersecurity Engineer specializing in cloud security, Microsoft Sentinel, Active Directory, IAM/RBAC, and systems hardening. Microsoft Certified Azure Security Engineer (AZ-500).">
   <meta name="keywords"
-    content="Raúl Calmón, Azure Security Engineer, AZ-500, Ciberseguridad, Microsoft Sentinel, KQL, SOAR, Active Directory, SOC, Cloud Security, Hardening">
+    content="Raúl Calmón, Azure Security Engineer, AZ-500, Cybersecurity, Microsoft Sentinel, KQL, SOAR, Active Directory, SOC, Cloud Security, Hardening">
   <meta name="author" content="Raúl Alberto Calmón Daza">
 
   <!-- Favicon -->
@@ -15,16 +15,16 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Raúl Calmón | Ingeniero en Sistemas & Ciberseguridad (AZ-500)">
+  <meta property="og:title" content="Raúl Calmón | Systems & Cybersecurity Engineer (AZ-500)">
   <meta property="og:description"
-    content="Explora el portafolio y competencias de Raúl Calmón. Especialista en Ciberseguridad, Cloud Security y operaciones SOC con Microsoft Sentinel y KQL.">
+    content="Explore Raúl Calmón's portfolio and core competencies. Specialist in Cybersecurity, Cloud Security, and SOC operations with Microsoft Sentinel and KQL.">
   <meta property="og:image" content="assets/og-image.jpg">
 
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="Raúl Calmón | Ingeniero en Sistemas & Ciberseguridad (AZ-500)">
+  <meta property="twitter:card" content="summary_large_card">
+  <meta property="twitter:title" content="Raúl Calmón | Systems & Cybersecurity Engineer (AZ-500)">
   <meta property="twitter:description"
-    content="Explora el portafolio y competencias de Raúl Calmón. Especialista en Ciberseguridad, Cloud Security y operaciones SOC con Microsoft Sentinel y KQL.">
+    content="Explore Raúl Calmón's portfolio and core competencies. Specialist in Cybersecurity, Cloud Security, and SOC operations with Microsoft Sentinel and KQL.">
 
   <!-- Premium Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,36 +36,42 @@
   <!-- Devicon for Tech Stack Icons -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
-  <title>Raúl Calmón | Ingeniero en Sistemas & Ciberseguridad (AZ-500)</title>
+  <title>Raúl Calmón | Systems & Cybersecurity Engineer (AZ-500)</title>
   <link rel="stylesheet" href="style.css">
 
-  <!-- Estilos adicionales: Technologic Stack + Tarjeta AZ-500 -->
+  <!-- Additional styles: Technology Stack + AZ-500 Card -->
   <style>
+    /* ===== Technology Stack: icon + name side by side (2-column grid) ===== */
     .stack-grid {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
       gap: 1rem;
-      align-items: center;
     }
 
-    .stack-icon {
-      width: 58px;
-      height: 58px;
-      border-radius: 14px;
-      background: hsl(var(--text-primary) / 0.06);
-      border: 1px solid hsl(var(--border-color));
+    .stack-item {
       display: flex;
       align-items: center;
-      justify-content: center;
+      gap: 1rem;
+      padding: 0.9rem 1.25rem;
+      border-radius: 12px;
+      background: hsl(var(--text-primary) / 0.04);
+      border: 1px solid hsl(var(--border-color));
       transition: all 0.3s ease;
     }
 
-    .stack-icon i {
-      font-size: 2rem;
+    .stack-item i {
+      font-size: 1.75rem;
+      color: hsl(var(--accent));
     }
 
-    .stack-icon:hover {
-      transform: translateY(-3px);
+    .stack-item span {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: hsl(var(--text-primary));
+    }
+
+    .stack-item:hover {
+      transform: translateY(-2px);
       border-color: hsl(var(--accent));
     }
 
@@ -150,12 +156,12 @@
   <div class="spotlight"></div>
 
   <!-- Toast Notification Container -->
-  <div id="contact-toast" class="toast toast-success" role="alert" aria-live="polite">¡Mensaje enviado con éxito!</div>
+  <div id="contact-toast" class="toast toast-success" role="alert" aria-live="polite">Message sent successfully!</div>
 
   <!-- Image Modal (Lightbox) -->
   <div id="image-modal" class="image-modal">
-    <span class="close-modal" aria-label="Cerrar imagen">&times;</span>
-    <img class="modal-content" id="expanded-img" alt="Foto de perfil expandida">
+    <span class="close-modal" aria-label="Close image">&times;</span>
+    <img class="modal-content" id="expanded-img" alt="Expanded profile photo">
   </div>
 
   <!-- Main Layout Grid -->
@@ -165,57 +171,57 @@
     <header class="left-col">
       <div class="profile-info">
         <div class="profile-avatar">
-          <img src="assets/profile.jpeg" alt="Foto de perfil de Raúl Alberto Calmón Daza" id="profile-img" style="cursor: pointer;" title="Haz clic para ampliar">
+          <img src="assets/profile.jpeg" alt="Profile photo of Raúl Alberto Calmón Daza" id="profile-img" style="cursor: pointer;" title="Click to enlarge">
         </div>
         <h1 class="profile-name">Raúl Calmón</h1>
-        <h2 class="profile-title">Ingeniero en Sistemas & Ciberseguridad</h2>
+        <h2 class="profile-title">Systems & Cybersecurity Engineer</h2>
         <h3 class="profile-title" style="font-size: 0.9rem; font-weight: 500; opacity: 0.85;">
           <span class="typing-text"
-            data-words='["Especialista en Ciberseguridad.", "Azure Security Engineer (AZ-500).", "Administrador de Sistemas.", "Analista SOC / Threat Detection."]'>Especialista
-            en Ciberseguridad.</span>
+            data-words='["Cybersecurity Specialist.", "Azure Security Engineer (AZ-500).", "Systems Administrator.", "SOC Analyst / Threat Detection."]'>Cybersecurity
+            Specialist.</span>
         </h3>
         <p class="profile-desc">
-          Protejo infraestructuras críticas y construyo entornos cloud seguros, combinando administración de sistemas,
-          control de acceso (IAM/RBAC), hardening y detección de amenazas con Microsoft Sentinel y KQL.
+          I protect critical infrastructure and build secure cloud environments by combining systems administration,
+          access control (IAM/RBAC), hardening, and threat detection with Microsoft Sentinel and KQL.
         </p>
 
         <!-- Side Navigation -->
-        <nav class="side-nav" aria-label="Navegación lateral de secciones">
+        <nav class="side-nav" aria-label="Section side navigation">
           <ul>
             <li>
               <a href="#about" class="nav-item active">
                 <span class="nav-line"></span>
-                <span>Sobre Mí</span>
+                <span>About Me</span>
               </a>
             </li>
             <li>
               <a href="#experience" class="nav-item">
                 <span class="nav-line"></span>
-                <span>Experiencia</span>
+                <span>Experience</span>
               </a>
             </li>
             <li>
               <a href="#certification" class="nav-item">
                 <span class="nav-line"></span>
-                <span>Certificación AZ-500</span>
+                <span>AZ-500 Certification</span>
               </a>
             </li>
             <li>
               <a href="#tech" class="nav-item">
                 <span class="nav-line"></span>
-                <span>Competencias</span>
+                <span>Skills</span>
               </a>
             </li>
             <li>
               <a href="#projects" class="nav-item">
                 <span class="nav-line"></span>
-                <span>Proyectos</span>
+                <span>Projects</span>
               </a>
             </li>
             <li>
               <a href="#contact" class="nav-item">
                 <span class="nav-line"></span>
-                <span>Contacto</span>
+                <span>Contact</span>
               </a>
             </li>
           </ul>
@@ -225,8 +231,8 @@
       <!-- Left Sidebar Footer -->
       <div class="left-footer">
         <div class="theme-toggle-container">
-          <span>Tema</span>
-          <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema de color">
+          <span>Theme</span>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme">
             <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="4"></circle>
@@ -248,7 +254,7 @@
 
         <div class="social-links">
           <a href="https://www.linkedin.com/in/raul-calmón/" target="_blank" rel="noopener noreferrer" class="social-link"
-            aria-label="LinkedIn de Raúl Calmón">
+            aria-label="Raúl Calmón's LinkedIn">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -256,15 +262,15 @@
               <circle cx="4" cy="4" r="2"></circle>
             </svg>
           </a>
-          <a href="mailto:raulcaldaz@gmail.com" class="social-link" aria-label="Correo de Raúl Calmón">
+          <a href="mailto:raulcaldaz@gmail.com" class="social-link" aria-label="Raúl Calmón's Email">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              <path d="m22 7-8.97 5.7a1.94 1.94 1.94 0 0 1-2.06 0L2 7"></path>
             </svg>
           </a>
           <a href="https://wa.me/584145493549" target="_blank" rel="noopener noreferrer" class="social-link"
-            aria-label="WhatsApp/Teléfono de Raúl Calmón">
+            aria-label="Raúl Calmón's WhatsApp/Phone">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path
@@ -276,16 +282,15 @@
 
         <!-- Action Buttons -->
         <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.5rem;">
-          <!-- Descargar CV -->
+          <!-- Download Resume -->
           <a href="assets/Raul Calmon CV.pdf" download="Raul Calmon CV.pdf" style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.75rem 1rem; font-size: 0.85rem; font-weight: 600; color: hsl(var(--text-primary)); background-color: hsl(var(--accent) / 0.08); border: 1px solid hsl(var(--accent) / 0.4); border-radius: 8px; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.borderColor='hsl(var(--accent))'; this.style.backgroundColor='hsl(var(--accent) / 0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='hsl(var(--accent) / 0.4)'; this.style.backgroundColor='hsl(var(--accent) / 0.08)'; this.style.transform='none';">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-            Descargar CV (PDF)
+            Download Resume (PDF)
           </a>
 
-       
           <a href="https://drive.google.com/drive/u/0/folders/1el42UQr9upFA5wj-vN1UkFnIeu_5E7HE" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.75rem 1rem; font-size: 0.85rem; font-weight: 600; color: hsl(var(--text-primary)); background-color: hsl(var(--text-primary) / 0.02); border: 1px solid hsl(var(--border-color)); border-radius: 8px; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.borderColor='hsl(var(--accent))'; this.style.color='hsl(var(--accent))'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='hsl(var(--border-color))'; this.style.color='hsl(var(--text-primary))'; this.style.transform='none';">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-            Ver Certificados en Drive
+            View Certificates on Drive
           </a>
         </div>
       </div>
@@ -294,66 +299,66 @@
     <!-- Right Column (Scrolls Continuously) -->
     <main class="right-col">
 
-      <!-- Sobre Mí Section -->
-      <section class="about-section" id="about" aria-label="Sobre mí">
+      <!-- About Me Section -->
+      <section class="about-section" id="about" aria-label="About me">
         <div class="section-header-mobile">
-          <h2 class="section-title-mobile">Sobre Mí</h2>
+          <h2 class="section-title-mobile">About Me</h2>
         </div>
         <p>
-          Soy <span>Ingeniero en Sistemas y Ciberseguridad</span> con casi 4 años de experiencia administrando y asegurando
-          infraestructura TI crítica. Me especializo en <span>Ciberseguridad y Cloud Security</span>: administración de
-          <span>Active Directory</span>, control de acceso (<span>RBAC/IAM</span>), hardening de sistemas y aplicación de
-          protocolos estrictos de seguridad en operaciones judiciales de alta disponibilidad.
+          I am a <span>Systems and Cybersecurity Engineer</span> with nearly four years of experience administering and
+          securing critical IT infrastructure. I specialize in <span>Cybersecurity and Cloud Security</span>:
+          <span>Active Directory</span> administration, access control (<span>RBAC/IAM</span>), systems hardening, and
+          the enforcement of strict security protocols in high-availability judicial operations.
         </p>
         <p>
-          Recientemente certificado como <span>Azure Security Engineer Associate (AZ-500)</span>, combino una sólida base
-          on-premise con habilidades modernas de seguridad en la nube: <span>Microsoft Sentinel, KQL y SOAR</span>,
-          validadas en despliegues de laboratorio a escala empresarial para detección de amenazas y respuesta automatizada.
+          Recently certified as an <span>Azure Security Engineer Associate (AZ-500)</span>, I combine a solid on-premises
+          foundation with modern cloud security skills — <span>Microsoft Sentinel, KQL, and SOAR</span> — validated
+          through enterprise-scale lab deployments for threat detection and automated response.
         </p>
         <p>
-          Profesional trilingüe (Español/Inglés/Francés), orientado a entornos remotos de <span>Cloud Security y SOC</span>,
-          garantizando estabilidad, confidencialidad y mejora continua de los sistemas que administro.
+          Trilingual professional (Spanish/English/French), oriented toward remote <span>Cloud Security and SOC</span>
+          environments, ensuring the stability, confidentiality, and continuous improvement of the systems I administer.
         </p>
       </section>
 
-      <!-- Experiencia Section -->
-      <section class="experience-section" id="experience" aria-label="Experiencia laboral">
+      <!-- Experience Section -->
+      <section class="experience-section" id="experience" aria-label="Work experience">
         <div class="section-header-mobile">
-          <h2 class="section-title-mobile">Experiencia</h2>
+          <h2 class="section-title-mobile">Experience</h2>
         </div>
 
         <div class="experience-list">
           <!-- Item 1 -->
           <div class="experience-card" id="exp-item-1">
-            <div class="experience-card-date">2022 — Actualidad</div>
+            <div class="experience-card-date">2022 — Present</div>
             <div class="experience-content">
-              <h3 class="experience-card-title">Administrador de Sistemas TI / Técnico</h3>
-              <div class="experience-card-company">Dirección Ejecutiva de la Magistratura – Regional Barinas</div>
+              <h3 class="experience-card-title">IT Systems Administrator / Technician</h3>
+              <div class="experience-card-company">Executive Directorate of the Magistracy – Barinas Region</div>
               <p class="experience-card-desc">
-                Mantengo la disponibilidad de los sistemas judiciales críticos mediante monitoreo proactivo, gestión de
-                parches y mantenimiento preventivo en infraestructura distribuida.
+                I maintain the availability of critical judicial systems through proactive monitoring, patch management,
+                and preventive maintenance across distributed infrastructure.
               </p>
               <p class="experience-card-desc" style="margin-top: 0.5rem;">
-                Fortalezco la postura de seguridad de bases de datos sensibles implementando control de acceso basado en
-                roles (RBAC), reduciendo a cero los incidentes de acceso no autorizado.
+                I strengthen the security posture of sensitive databases by implementing role-based access control
+                (RBAC), reducing unauthorized access incidents to zero.
               </p>
               <p class="experience-card-desc" style="margin-top: 0.5rem;">
-                Asesoro a la dirección en mejoras de infraestructura y estrategias de mitigación de riesgos, logrando una
-                reducción medible de la deuda técnica en 12 meses.
+                I advise leadership on infrastructure improvements and risk mitigation strategies, achieving a measurable
+                reduction of technical debt within 12 months.
               </p>
               <p class="experience-card-desc" style="margin-top: 0.5rem;">
-                Despliego y configuro Microsoft Sentinel en entornos de laboratorio Azure, desarrollando reglas analíticas
-                KQL para detección de amenazas en tiempo real y flujos de respuesta automatizada.
+                I deploy and configure Microsoft Sentinel in Azure lab environments, developing KQL analytics rules for
+                real-time threat detection and automated response workflows.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Certificación AZ-500 Section -->
-      <section class="skills-section" id="certification" aria-label="Certificación destacada AZ-500">
+      <!-- AZ-500 Certification Section -->
+      <section class="skills-section" id="certification" aria-label="Featured AZ-500 certification">
         <div class="section-header-mobile">
-          <h2 class="section-title-mobile">Certificación AZ-500</h2>
+          <h2 class="section-title-mobile">AZ-500 Certification</h2>
         </div>
 
         <div class="az500-card">
@@ -364,81 +369,111 @@
             <div class="az500-kicker">Microsoft Certified · 2026</div>
             <h3>Azure Security Engineer Associate (AZ-500)</h3>
             <p>
-              Certificación oficial de Microsoft que valida mis competencias para implementar seguridad en la nube a nivel
-              empresarial: gestión de identidades y acceso (IAM/MFA), protección de datos y aplicaciones, seguridad de red
-              y operaciones de seguridad con <strong>Microsoft Sentinel, KQL y SOAR (Logic Apps)</strong>. Este respaldo
-              certifica mi capacidad para diseñar, configurar y monitorear entornos cloud seguros de extremo a extremo.
+              Official Microsoft certification validating my ability to implement enterprise-grade cloud security:
+              identity and access management (IAM/MFA), data and application protection, network security, and security
+              operations with <strong>Microsoft Sentinel, KQL, and SOAR (Logic Apps)</strong>. This credential certifies
+              my capability to design, configure, and monitor secure cloud environments from end to end.
             </p>
           </div>
         </div>
 
-        <h3 class="sub-heading">Otras certificaciones</h3>
+        <h3 class="sub-heading">Other Certifications</h3>
         <ul class="cert-list">
           <li><strong>Cybersecurity & Pentesting Course</strong> — Edutin Academy (2025)</li>
           <li><strong>Fundamentals of Computer Forensics</strong> — SUSCERTE (2024)</li>
           <li><strong>Introduction to Cryptography</strong> — SUSCERTE (2024)</li>
         </ul>
 
-        <h3 class="sub-heading">Educación</h3>
+        <h3 class="sub-heading">Education</h3>
         <ul class="cert-list">
-          <li><strong>B.Sc. en Ingeniería de Sistemas</strong> — Universidad Santa María (2019 – 2025)</li>
-          <li><strong>B.Sc. en Ingeniería Informática</strong> — UNELLEZ (2020 – 2025)</li>
+          <li><strong>B.Sc. in Systems Engineering</strong> — Universidad Santa María (2019 – 2025)</li>
+          <li><strong>B.Sc. in Computer Engineering</strong> — UNELLEZ (2020 – 2025)</li>
         </ul>
 
-        <h3 class="sub-heading">Idiomas</h3>
+        <h3 class="sub-heading">Languages</h3>
         <div class="skills-grid" style="grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));">
           <div class="skill-chip">
             <div class="skill-chip-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
             </div>
-            <span class="skill-chip-name">Español (Nativo)</span>
+            <span class="skill-chip-name">Spanish (Native)</span>
           </div>
           <div class="skill-chip">
             <div class="skill-chip-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
             </div>
-            <span class="skill-chip-name">Inglés (C2 Certificado)</span>
+            <span class="skill-chip-name">English (C2 Certified)</span>
           </div>
           <div class="skill-chip">
             <div class="skill-chip-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
             </div>
-            <span class="skill-chip-name">Francés (Intermedio)</span>
+            <span class="skill-chip-name">French (Intermediate)</span>
           </div>
           <div class="skill-chip">
             <div class="skill-chip-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
             </div>
-            <span class="skill-chip-name">Alemán (Básico)</span>
+            <span class="skill-chip-name">German (Beginner)</span>
           </div>
         </div>
       </section>
 
-      <!-- Competencias / Technologic Stack Section -->
-      <section class="skills-section" id="tech" aria-label="Competencias core">
+      <!-- Skills / Technology Stack Section -->
+      <section class="skills-section" id="tech" aria-label="Core competencies">
         <div class="section-header-mobile">
-          <h2 class="section-title-mobile">🛠 Technologic Stack</h2>
+          <h2 class="section-title-mobile">🛠 Technology Stack</h2>
         </div>
 
-        <!-- Únicamente los iconos del stack tecnológico -->
+        <!-- Stack icons with visible names, matching the labeled skill-chip layout -->
         <div class="stack-grid">
-          <div class="stack-icon" title="Microsoft Azure" aria-label="Microsoft Azure"><i class="devicon-azure-plain"></i></div>
-          <div class="stack-icon" title="MongoDB" aria-label="MongoDB"><i class="devicon-mongodb-plain"></i></div>
-          <div class="stack-icon" title="Go" aria-label="Go"><i class="devicon-go-plain"></i></div>
-          <div class="stack-icon" title="Python" aria-label="Python"><i class="devicon-python-plain"></i></div>
-          <div class="stack-icon" title="Debian" aria-label="Debian"><i class="devicon-debian-plain"></i></div>
-          <div class="stack-icon" title="Java" aria-label="Java"><i class="devicon-java-plain"></i></div>
-          <div class="stack-icon" title="Python (Automatización)" aria-label="Python Automatización"><i class="devicon-python-plain"></i></div>
-          <div class="stack-icon" title="Docker" aria-label="Docker"><i class="devicon-docker-plain"></i></div>
-          <div class="stack-icon" title="Kubernetes" aria-label="Kubernetes"><i class="devicon-kubernetes-plain"></i></div>
-          <div class="stack-icon" title="Google Workspace" aria-label="Google Workspace"><i class="devicon-google-plain"></i></div>
+          <div class="stack-item" title="Microsoft Azure">
+            <i class="devicon-azure-plain" aria-hidden="true"></i>
+            <span>Microsoft Azure</span>
+          </div>
+          <div class="stack-item" title="MongoDB">
+            <i class="devicon-mongodb-plain" aria-hidden="true"></i>
+            <span>MongoDB</span>
+          </div>
+          <div class="stack-item" title="Go">
+            <i class="devicon-go-plain" aria-hidden="true"></i>
+            <span>Go</span>
+          </div>
+          <div class="stack-item" title="Python">
+            <i class="devicon-python-plain" aria-hidden="true"></i>
+            <span>Python</span>
+          </div>
+          <div class="stack-item" title="Debian">
+            <i class="devicon-debian-plain" aria-hidden="true"></i>
+            <span>Debian</span>
+          </div>
+          <div class="stack-item" title="Java">
+            <i class="devicon-java-plain" aria-hidden="true"></i>
+            <span>Java</span>
+          </div>
+          <div class="stack-item" title="Python (Automation)">
+            <i class="devicon-python-plain" aria-hidden="true"></i>
+            <span>Python (Automation)</span>
+          </div>
+          <div class="stack-item" title="Docker">
+            <i class="devicon-docker-plain" aria-hidden="true"></i>
+            <span>Docker</span>
+          </div>
+          <div class="stack-item" title="Kubernetes">
+            <i class="devicon-kubernetes-plain" aria-hidden="true"></i>
+            <span>Kubernetes</span>
+          </div>
+          <div class="stack-item" title="Google Workspace">
+            <i class="devicon-google-plain" aria-hidden="true"></i>
+            <span>Google Workspace</span>
+          </div>
         </div>
       </section>
 
-      <!-- Proyectos Section -->
-      <section class="projects-section" id="projects" aria-label="Proyectos destacados">
+      <!-- Projects Section -->
+      <section class="projects-section" id="projects" aria-label="Featured projects">
         <div class="section-header-mobile">
-          <h2 class="section-title-mobile">Proyectos</h2>
+          <h2 class="section-title-mobile">Projects</h2>
         </div>
 
         <div class="projects-list">
@@ -455,10 +490,10 @@
                 <h3 class="project-card-title">Cloud Security & SIEM Implementation Lab</h3>
               </div>
               <p class="project-desc">
-                Proyecto personal (2026). Arquitecté un despliegue de Microsoft Sentinel de extremo a extremo en Azure para
-                monitorear infraestructura cloud, simulando detección de amenazas a escala empresarial. Desarrollé consultas
-                KQL personalizadas para identificar patrones de autenticación anómalos y posible movimiento lateral,
-                mejorando la cobertura de detección en un 40%, con flujos de respuesta automatizada mediante Logic Apps (SOAR).
+                Personal project (2026). I architected an end-to-end Microsoft Sentinel deployment on Azure to monitor
+                cloud infrastructure, simulating enterprise-scale threat detection. I developed custom KQL queries to
+                identify anomalous authentication patterns and potential lateral movement — improving detection coverage
+                by 40% — with automated response workflows via Logic Apps (SOAR).
               </p>
               <div class="project-card-tags">
                 <span class="project-card-tag">Microsoft Sentinel</span>
@@ -472,14 +507,14 @@
       </section>
 
       <!-- Contact Section -->
-      <section class="contact-section" id="contact" aria-label="Contacto directo">
+      <section class="contact-section" id="contact" aria-label="Direct contact">
         <div class="section-header-mobile">
-          <h2 class="section-title-mobile">Contacto</h2>
+          <h2 class="section-title-mobile">Contact</h2>
         </div>
 
         <div style="text-align: center; margin-bottom: 2.5rem;">
           <p style="color: hsl(var(--text-secondary)); margin-bottom: 1rem; font-size: 1.05rem;">
-            ¿Tienes un proyecto o posición de seguridad en mente? Puedes usar el formulario o enviarme un correo a:
+            Have a project or a security position in mind? Feel free to use the form or reach me directly at:
           </p>
           <a href="mailto:raulcaldaz@gmail.com"
             style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 1.2rem; font-weight: 600; color: hsl(var(--text-primary)); text-decoration: none; padding: 0.75rem 1.5rem; background-color: hsl(var(--text-primary) / 0.05); border: 1px solid hsl(var(--border-color)); border-radius: 999px; transition: all 0.3s ease;"
@@ -495,21 +530,21 @@
         </div>
 
         <div class="contact-card">
-          <form class="contact-form" id="contact-form" aria-label="Formulario de contacto">
+          <form class="contact-form" id="contact-form" aria-label="Contact form">
             <div class="form-group">
-              <label for="form-name" class="form-label">Tu Nombre</label>
-              <input type="text" id="form-name" class="form-input" placeholder="Tu nombre" required>
+              <label for="form-name" class="form-label">Your Name</label>
+              <input type="text" id="form-name" class="form-input" placeholder="Your name" required>
             </div>
             <div class="form-group">
-              <label for="form-email" class="form-label">Tu Correo Electrónico</label>
-              <input type="email" id="form-email" class="form-input" placeholder="tu@correo.com" required>
+              <label for="form-email" class="form-label">Your Email Address</label>
+              <input type="email" id="form-email" class="form-input" placeholder="you@email.com" required>
             </div>
             <div class="form-group">
-              <label for="form-message" class="form-label">Mensaje</label>
-              <textarea id="form-message" class="form-input" placeholder="Hola Raúl, me gustaría conversar sobre..."
+              <label for="form-message" class="form-label">Message</label>
+              <textarea id="form-message" class="form-input" placeholder="Hi Raúl, I'd like to discuss..."
                 required></textarea>
             </div>
-            <button type="submit" class="form-btn">Enviar Mensaje</button>
+            <button type="submit" class="form-btn">Send Message</button>
           </form>
         </div>
       </section>
