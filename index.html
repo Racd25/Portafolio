@@ -550,6 +550,49 @@
   </div>
 </article>
 
+<article class="project-card" id="project-card-azrbac">
+  <div class="project-card-image" style="background-color: hsl(var(--text-primary) / 0.05); display: flex; align-items: center; justify-content: center; height: 100%; min-height: 200px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="hsl(var(--text-secondary))" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+      <circle cx="12" cy="12" r="4"></circle>
+      <path d="m10 10 4 4"></path>
+    </svg>
+  </div>
+  <div class="project-details">
+    <div class="project-card-header">
+      <h3 class="project-card-title">AzRBAC Auditor — Azure IAM Posture Scanner in Go</h3>
+    </div>
+    <p class="project-desc">
+      Open-source CLI tool for auditing identity and access management (IAM) in Azure subscriptions.
+      Authenticates via OAuth2 client credentials, enumerates all RBAC role assignments, resolves GUIDs
+      to human-readable names using Microsoft Graph API, and detects security misconfigurations: privileged
+      roles assigned directly to users, guest accounts with elevated permissions, and service principal
+      secrets expiring soon. Generates executive reports in HTML (with color-coded severity badges) and
+      JSON. Built to run on any Azure tenant without requiring premium licenses.
+    </p>
+    <div class="project-card-tags">
+      <span class="project-card-tag">Go</span>
+      <span class="project-card-tag">Azure RBAC</span>
+      <span class="project-card-tag">Microsoft Graph</span>
+      <span class="project-card-tag">OAuth2</span>
+      <span class="project-card-tag">Security Tooling</span>
+    </div>
+    <div style="margin-top: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+      <a href="https://github.com/Racd25/AzRBAC-Auditor" target="_blank" rel="noopener noreferrer"
+        style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; font-weight: 600; color: hsl(var(--accent)); text-decoration: none; padding: 0.45rem 0.9rem; border: 1px solid hsl(var(--accent) / 0.4); border-radius: 8px; transition: all 0.3s ease;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+        View on GitHub
+      </a>
+      <a href="https://github.com/Racd25/AzRBAC-Auditor/releases" target="_blank" rel="noopener noreferrer"
+        style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; font-weight: 600; color: hsl(var(--text-primary)); text-decoration: none; padding: 0.45rem 0.9rem; border: 1px solid hsl(var(--border-color)); border-radius: 8px; transition: all 0.3s ease;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        Download Binaries
+      </a>
+    </div>
+  </div>
+</article>
+
+        
   </section>
       <!-- Contact Section -->
       <section class="contact-section" id="contact" aria-label="Direct contact">
