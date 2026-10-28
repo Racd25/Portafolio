@@ -311,7 +311,8 @@
           the enforcement of strict security protocols in high-availability judicial operations.
         </p>
         <p>
-          Recently certified as an <span>Azure Security Engineer Associate (AZ-500)</span>, I combine a solid on-premises
+          Certified <span>Azure Security Engineer Associate (AZ-500)</span> and graduate of
+          <span>CS50's Introduction to Cybersecurity (Harvard University)</span>, I combine a solid on-premises
           foundation with modern cloud security skills — <span>Microsoft Sentinel, KQL, and SOAR</span> — validated
           through enterprise-scale lab deployments for threat detection and automated response.
         </p>
@@ -379,6 +380,9 @@
 
         <h3 class="sub-heading">Other Certifications</h3>
         <ul class="cert-list">
+          <li><strong>CS50's Introduction to Cybersecurity</strong> — Harvard University (2026)</li>
+          <li><strong>Go Logic & Flow</strong> — Coddy (2026)</li>
+          <li><strong>Go Fundamentals</strong> — Coddy (2026)</li>
           <li><strong>Cybersecurity & Pentesting Course</strong> — Edutin Academy (2025)</li>
           <li><strong>Fundamentals of Computer Forensics</strong> — SUSCERTE (2024)</li>
           <li><strong>Introduction to Cryptography</strong> — SUSCERTE (2024)</li>
@@ -592,6 +596,50 @@
   </div>
 </article>
 
+<article class="project-card" id="project-card-websentinel">
+  <div class="project-card-image" style="background-color: hsl(var(--text-primary) / 0.05); display: flex; align-items: center; justify-content: center; height: 100%; min-height: 200px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="hsl(var(--text-secondary))" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"></circle>
+      <path d="M2 12h20"></path>
+      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+      <path d="M4.93 4.93l1.41 1.41"></path>
+      <path d="M17.66 17.66l1.41 1.41"></path>
+    </svg>
+  </div>
+  <div class="project-details">
+    <div class="project-card-header">
+      <h3 class="project-card-title">WebSentinel — Web Security Posture Auditor in Go</h3>
+    </div>
+    <p class="project-desc">
+      Open-source web security posture auditor built from scratch in Go. Performs comprehensive audits of TLS
+      configurations (protocol versions, certificate chain trust and expiry, cipher suites, HTTP→HTTPS redirection),
+      security headers (HSTS, CSP, X-Frame-Options, Referrer-Policy, Permissions-Policy), cookie security flags
+      (Secure, HttpOnly, SameSite), and information exposure (sensitive paths like /.git and /.env, revealing Server
+      headers). Produces an executive A-F grade with a 100-point score and generates HTML/JSON reports with
+      color-coded severity badges. Zero external dependencies; ships cross-compiled binaries for Windows and Linux.
+    </p>
+    <div class="project-card-tags">
+      <span class="project-card-tag">Go</span>
+      <span class="project-card-tag">TLS / x509</span>
+      <span class="project-card-tag">Security Headers</span>
+      <span class="project-card-tag">Cookie Auditing</span>
+      <span class="project-card-tag">Web Hardening</span>
+      <span class="project-card-tag">CLI</span>
+    </div>
+    <div style="margin-top: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+      <a href="https://github.com/Racd25/WebSentinel" target="_blank" rel="noopener noreferrer"
+        style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; font-weight: 600; color: hsl(var(--accent)); text-decoration: none; padding: 0.45rem 0.9rem; border: 1px solid hsl(var(--accent) / 0.4); border-radius: 8px; transition: all 0.3s ease;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+        View on GitHub
+      </a>
+      <a href="https://github.com/Racd25/WebSentinel/releases" target="_blank" rel="noopener noreferrer"
+        style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; font-weight: 600; color: hsl(var(--text-primary)); text-decoration: none; padding: 0.45rem 0.9rem; border: 1px solid hsl(var(--border-color)); border-radius: 8px; transition: all 0.3s ease;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        Download Binaries
+      </a>
+    </div>
+  </div>
+</article>
         
   </section>
       <!-- Contact Section -->
